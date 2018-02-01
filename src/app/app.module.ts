@@ -3,12 +3,16 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { FechaactualComponent } from './fechaactual/fechaactual.component';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 //decorador con los siguiente metadatos
 @NgModule({
   //declaramos las clase que se definen en los componentes
   declarations: [
-    AppComponent
+    AppComponent,
+    FechaactualComponent,
+    CopyrightComponent
   ],
   imports: [
     BrowserModule

@@ -10,6 +10,8 @@ import { EjmetodoComponent } from './ejmetodo/ejmetodo.component';
 import { EjpropertybindingComponent } from './ejpropertybinding/ejpropertybinding.component';
 import { EjeventbindingComponent } from './ejeventbinding/ejeventbinding.component';
 import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component';
+import { EjdirectvangifComponent } from './ejdirectvangif/ejdirectvangif.component';
+import { EjdirectivangstyleComponent } from './ejdirectivangstyle/ejdirectivangstyle.component';
 
 //decorador con los siguiente metadatos
 @NgModule({
@@ -22,7 +24,9 @@ import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component'
     EjmetodoComponent,
     EjpropertybindingComponent,
     EjeventbindingComponent,
-    Ej2waybindingComponent
+    Ej2waybindingComponent,
+    EjdirectvangifComponent,
+    EjdirectivangstyleComponent
   ],
   imports: [
     BrowserModule,

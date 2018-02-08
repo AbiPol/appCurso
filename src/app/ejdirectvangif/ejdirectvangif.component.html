@@ -1,0 +1,32 @@
+<div class="container">
+    <label>Nombre y Apellidos</label>
+    <input type="text"
+           class="form-control"
+           placeholder="Completa nombre y apellidos"
+           [(ngModel)]="nombre">
+    <button type="submit" class="btn btn-primary"
+            *ngIf="nombre; else desactivado"><!-- desactivado es un ID que angular la trabaja en la etiqueta ng-template
+                                                  En el else de la directiva se definen ID's -->
+            Enviar
+    </button>
+    <ng-template #desactivado>
+        <button type="submit" class="btn btn-primary" disabled>
+              Enviar
+        </button>
+    </ng-template>
+</div>
+<hr>
+<div class="container">
+    <label>Cual es la capital de España?</label>
+    <input type="text"
+           class="form-control"
+           placeholder="Introduzca capital"
+           [(ngModel)]="capital">
+    <p *ngIf="!capital; else correcto">Introduzca la informacion en la caja </p>
+    <ng-template #correcto>
+      <h4 *ngIf="setResultado(); else incorrecto">Correcto!!!</h4>
+    </ng-template>
+    <ng-template #incorrecto>
+      <h4>No es correcto, intentalo de nuevo</h4>
+    </ng-template>
+</div>

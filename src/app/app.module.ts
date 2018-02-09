@@ -12,6 +12,7 @@ import { EjeventbindingComponent } from './ejeventbinding/ejeventbinding.compone
 import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component';
 import { EjdirectvangifComponent } from './ejdirectvangif/ejdirectvangif.component';
 import { EjdirectivangstyleComponent } from './ejdirectivangstyle/ejdirectivangstyle.component';
+import { EjdirectivangclassComponent } from './ejdirectivangclass/ejdirectivangclass.component';
 
 //decorador con los siguiente metadatos
 @NgModule({
@@ -26,7 +27,8 @@ import { EjdirectivangstyleComponent } from './ejdirectivangstyle/ejdirectivangs
     EjeventbindingComponent,
     Ej2waybindingComponent,
     EjdirectvangifComponent,
-    EjdirectivangstyleComponent
+    EjdirectivangstyleComponent,
+    EjdirectivangclassComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<h3>Componente Hijo</h3>
+<div class="hijo">
+  <h4 [ngClass]="{tachado: leido ==true}">{{ aviso }}</h4>
+  <button class="btn btn-success float-md-right"
+          (click)="marcar($event); detectar($event)"
+          *ngIf="leido == false">Marcar como leido </button>
+  <button class="btn btn-danger float-md-right"
+          (click)="marcar($event)"
+          *ngIf="leido == true">Marcar como no leido </button>
+</div>

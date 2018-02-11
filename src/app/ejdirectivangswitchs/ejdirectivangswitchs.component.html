@@ -1,0 +1,15 @@
+<h3>Jugadores Miticos baloncesto español</h3>
+<ul *ngFor="let jugador of jugadores" [ngSwitch]="jugador.equipo">
+  <li *ngSwitchCase="'Real Madrid'" class="madrid">
+    <h5>{{jugador.nombre}} | {{jugador.equipo}}</h5>
+  </li>
+  <li *ngSwitchCase="'Barsa'" class="barsa">
+    <h5>{{jugador.nombre}} | {{jugador.equipo}}</h5>
+  </li>
+  <li *ngSwitchCase="'Juventud de Badalona'" class="juve">
+    <h5>{{jugador.nombre}} | {{jugador.equipo}}</h5>
+  </li>
+  <li *ngSwitchCase="'Estudiantes'" class="estu">
+    <h5>{{jugador.nombre}} | {{jugador.equipo}}</h5>
+  </li>
+</ul>

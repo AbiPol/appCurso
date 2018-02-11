@@ -4,7 +4,8 @@
 <div *ngIf="puntuacion"> <!-- ngIf es una directiva estructural y siempre va precedida de '*'' -->
   <h4 *ngIf="puntuacion >= 0 && puntuacion <= 10; else aviso"
       [ngClass]="{aprobado: puntuacion >= 5,
-                  suspenso: puntutacion < 5}">
+                  suspenso: puntuacion < 5}"><!-- se ejcuta una clase CSS si se cumple la condicion
+                                               que va despues de los dos puntos(puntuacion >=5) -->
     Puntuacion obtenida: {{ puntuacion }}
   </h4><!-- ngClass es una directiva de atributo -->
 

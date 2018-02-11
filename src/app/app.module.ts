@@ -13,6 +13,13 @@ import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component'
 import { EjdirectvangifComponent } from './ejdirectvangif/ejdirectvangif.component';
 import { EjdirectivangstyleComponent } from './ejdirectivangstyle/ejdirectivangstyle.component';
 import { EjdirectivangclassComponent } from './ejdirectivangclass/ejdirectivangclass.component';
+import { EjdirectivangforComponent } from './ejdirectivangfor/ejdirectivangfor.component';
+import { EjarrayobjetosComponent } from './ejarrayobjetos/ejarrayobjetos.component';
+import { EjdirectivangswitchsComponent } from './ejdirectivangswitchs/ejdirectivangswitchs.component';
+import { MenuitemDirective } from './menuitem.directive';
+import { EjmidirectivaComponent } from './ejmidirectiva/ejmidirectiva.component';
+import { PadreComponent } from './padre/padre.component';
+import { HijoComponent } from './hijo/hijo.component';
 
 //decorador con los siguiente metadatos
 @NgModule({
@@ -28,7 +35,14 @@ import { EjdirectivangclassComponent } from './ejdirectivangclass/ejdirectivangc
     Ej2waybindingComponent,
     EjdirectvangifComponent,
     EjdirectivangstyleComponent,
-    EjdirectivangclassComponent
+    EjdirectivangclassComponent,
+    EjdirectivangforComponent,
+    EjarrayobjetosComponent,
+    EjdirectivangswitchsComponent,
+    MenuitemDirective,
+    EjmidirectivaComponent,
+    PadreComponent,
+    HijoComponent
   ],
   imports: [
     BrowserModule,
